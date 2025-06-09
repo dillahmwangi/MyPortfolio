@@ -15,7 +15,24 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  fontFamily: 'Axiforma', sans-serif;
 }
+
+@font-face {
+  fontFamily: 'Axiforma';
+  src: url('/fonts/Axiforma/Axiforma-Regular.woff2') format('woff2'),
+       url('/fonts/Axiforma/Axiforma-Regular.woff') format('woff'),
+       url('/fonts/Axiforma/Axiforma-Regular.ttf') format('truetype');
+  fontWeight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  fontFamily: 'Axiforma';
+  src: url('/fonts/Axiforma/Axiforma-Bold.woff2') format('woff2'),
+       url('/fonts/Axiforma/Axiforma-Bold.woff') format('woff'),
+       url('/fonts/Axiforma/Axiforma-Bold.ttf') format('truetype');
+  fontWeight: bold;
+  font-style: normal;
+}
+
