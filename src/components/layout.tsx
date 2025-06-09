@@ -1,15 +1,15 @@
 "use client";
-import React, { useState } from "react";
-import Navbar from "./navbar/page";
+import React from "react";
+import Navbar from "./navbar";
 
-export default function DefaultLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+import { ReactNode } from "react";
+
+export default function DefaultLayout({ children }: { children: ReactNode }) {
   return (
-
-<Navbar/>
-        
+    <>
+      <Navbar />
+      <main>{children}</main>
+    
+    </>
   );
 }
