@@ -14,7 +14,7 @@ const Navbar = () => {
           <ul className="font-medium flex md:flex-row md:space-x-8 rtl:space-x-reverse">
             <li>
               <a
-                href="#"
+                href="#aboutme"
                 className="block py-2 px-3 hover:underline-8 text-white hover:text-[#DCA465] rounded-sm md:bg-transparent md:p-0 dark:text-white"
                 aria-current="page"
               >
@@ -23,7 +23,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#skills"
                 className="py-2 px-3  text-white hover:text-[#DCA465] rounded-sm  md:p-0 dark:text-white "
               >
                Skills
@@ -31,7 +31,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#work"
                 className="py-2 px-3 text-white hover:text-[#DCA465] md:p-0"
               >
                  Work
@@ -40,27 +40,29 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#projects"
                 className="block py-2 px-3 text-white rounded-sm text-grey-900 hover:text-[#DCA465]  md:p-0 "
               >
                 Projects
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="#"
                 className="block py-2 px-3 text-white rounded-sm  md:border-0  md:p-0 hover:text-[#DCA465]"
               >
                 Gallery
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
         
         {/* Button at the end */}
-        <button className="border border-[#DCA465] bg-[#DCA465] rounded-md p-2 text-white hover:text-[#DCA465] hover:bg-gray-700">
-          Let's Talk
-        </button>
+<a href="tel:+254713289622">
+  <button className="border border-[#DCA465] bg-[#DCA465] rounded-md p-2 text-white hover:text-[#DCA465] hover:bg-gray-700">
+    Let's Talk
+  </button>
+</a>
       </div>
     </nav>
   );

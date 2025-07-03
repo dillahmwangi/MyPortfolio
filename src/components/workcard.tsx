@@ -2,15 +2,16 @@ import React from "react";
 
 const AcademicProfessionalJourney = () => {
   const education = [
-    { year: "2020", institution: "KCA University", degree: " Bachelors In Software Development" },
-    { year: "2020-2024", institution: "Zalego Institute", degree: "Web Development & Mobile development" },
-    { year: "1996-2008", institution: "Buruburu Girls Secondary School",degree: "Master in Visual Arts" },
+    { year: "2020-2024", institution: "KCA University", degree: " Bachelors In Software Development" },
+    { year: "Jan 2020- June 2020", institution: "Zalego Institute", degree: "Web Development & Mobile development" },
+    { year: "2016-2019", institution: "Buruburu Girls Secondary School",degree: "High School Certification." },
   ];
 
   const workExperience = [
-    { year: "2018-2024", company: "Ventures Institute", position: "Master in Visual Arts" },
-    { year: "2016-2018", company: "Usalama Techonologies", position: "Master in Visual Arts" },
-    { year: "2014-2016", company: "African Stem Girl", position: "Master in Visual Arts" },
+    { year: "April 2024- June 2025", company: "Usalama Techonologies", position: "Software Developer" },
+    { year: "Feb 2025 - April 2025", company: "Ventures Institute", position: "Technical Mentor" },
+
+    { year: "August 2024", company: "African Stem Girl", position: "Technical Mentor & Customer Service" },
   ];
 
   return (

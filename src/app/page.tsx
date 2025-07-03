@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 export default function Home() {
   return (
     <DefaultLayout>
-      <section className=" bg-gray-900 space-y-4">
+      <section className=" bg-gray-900 space-y-4" id="aboutme">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <p className="text-xl text-gray-500 ">Hello I'm</p>
@@ -28,7 +28,7 @@ export default function Home() {
             </p>
             <div className="flex items-center space-x-4">
               <a
-                href="/assets/Mwangi_Muthony_Resume -Data.pdf"
+                href="/assets/Mwangi_Muthony_Software developer_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-[#DCA465] border- [#DCA465] px-5 py-3 text-base text-bold hover:text-[#DCA465] font-medium text-center text-white border border-[#DCA465] rounded-lg hover:bg-white focus:ring-4 focus:ring-gray-100 dark:text-white  dark:hover:bg-gray-700 dark:focus:ring-gray-800"
@@ -108,6 +108,12 @@ export default function Home() {
                 </svg>
               </a>
             </div>
+            <a
+              href="mailto:dillahmwangi@gmail.com"
+              className="inline-flex items-center justify-center px-5 py-3 text-base text-[#DCA465] font-medium text-center hover:text-white rounded-lg hover:bg-white dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            >
+              Email Me
+            </a>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img
@@ -119,297 +125,74 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-12 ">
-        <h1 className="text-[48px] text-center text-[#DCA465] font-bold">
-          Skills
-        </h1>
-        <div className="grid grid-cols-3  space-x-3   justify-evenly">
-          <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 p-6">
-            <div className="flex items-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6 text-slate-600"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
-                />
-              </svg>
-              <h5 className="ml-3 text-slate-800 text-xl font-semibold">
-                Javascript
-              </h5>
-            </div>
-            <p className="block text-slate-600 leading-normal font-light mb-4">
-              Because it&apos;s about motivating the doers. Because I&apos;m
-              here to follow my dreams and inspire others.
-            </p>
-            <div>
-              <a
-                href="#"
-                className="text-slate-800 font-semibold text-sm hover:underline flex items-center"
-              >
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="ml-2 h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 p-6">
-            <div className="flex items-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6 text-slate-600"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
-                />
-              </svg>
-              <h5 className="ml-3 text-slate-800 text-xl font-semibold">
-                Python
-              </h5>
-            </div>
-            <p className="block text-slate-600 leading-normal font-light mb-4">
-              Because it&apos;s about motivating the doers. Because I&apos;m
-              here to follow my dreams and inspire others.
-            </p>
-            <div>
-              <a
-                href="#"
-                className="text-slate-800 font-semibold text-sm hover:underline flex items-center"
-              >
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="ml-2 h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
+   <section
+  className="max-w-screen-xl px-4 py-12 mx-auto"
+  id="skills"
+>
+  <h1 className="text-4xl text-center text-[#DCA465] font-bold mb-12 tracking-wide relative">
+    Skills
+    <span className="block h-1 w-16 bg-[#DCA465] mx-auto mt-2 rounded"></span>
+  </h1>
 
-          <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 p-6">
-            <div className="flex items-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6 text-slate-600"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
-                />
-              </svg>
-              <h5 className="ml-3 text-slate-800 text-xl font-semibold">
-                NextJs
-              </h5>
-            </div>
-            <p className="block text-slate-600 leading-normal font-light mb-4">
-              Because it&apos;s about motivating the doers. Because I&apos;m
-              here to follow my dreams and inspire others.
-            </p>
-            <div>
-              <a
-                href="#"
-                className="text-slate-800 font-semibold text-sm hover:underline flex items-center"
-              >
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="ml-2 h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 p-6">
-            <div className="flex items-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6 text-slate-600"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
-                />
-              </svg>
-              <h5 className="ml-3 text-slate-800 text-xl font-semibold">
-                ReactJs
-              </h5>
-            </div>
-            <p className="block text-slate-600 leading-normal font-light mb-4">
-              Because it&apos;s about motivating the doers. Because I&apos;m
-              here to follow my dreams and inspire others.
-            </p>
-            <div>
-              <a
-                href="#"
-                className="text-slate-800 font-semibold text-sm hover:underline flex items-center"
-              >
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="ml-2 h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 p-6">
-            <div className="flex items-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6 text-slate-600"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
-                />
-              </svg>
-              <h5 className="ml-3 text-slate-800 text-xl font-semibold">
-                Tailwind css
-              </h5>
-            </div>
-            <p className="block text-slate-600 leading-normal font-light mb-4">
-              Because it&apos;s about motivating the doers. Because I&apos;m
-              here to follow my dreams and inspire others.
-            </p>
-            <div>
-              <a
-                href="#"
-                className="text-slate-800 font-semibold text-sm hover:underline flex items-center"
-              >
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="ml-2 h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 p-6">
-            <div className="flex items-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6 text-slate-600"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
-                />
-              </svg>
-              <h5 className="ml-3 text-slate-800 text-xl font-semibold">
-                Flutter with Dart
-              </h5>
-            </div>
-            <p className="block text-slate-600 leading-normal font-light mb-4">
-              Because it&apos;s about motivating the doers. Because I&apos;m
-              here to follow my dreams and inspire others.
-            </p>
-            <div>
-              <a
-                href="#"
-                className="text-slate-800 font-semibold text-sm hover:underline flex items-center"
-              >
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="ml-2 h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
+  <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    {[
+      { title: "Javascript" },
+      { title: "Python (Django)" },
+      { title: "NextJs" },
+      { title: "ReactJs" },
+      { title: "Tailwind CSS" },
+      { title: "Flutter with Dart" },
+    ].map((skill, index) => (
+      <div
+        key={index}
+        className="flex flex-col bg-white shadow-md border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300"
+      >
+        <div className="flex items-center mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="h-8 w-8 text-[#DCA465]"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582"
+            />
+          </svg>
+          <h5 className="ml-3 text-slate-800 text-xl font-semibold">
+            {skill.title}
+          </h5>
         </div>
-      </section>
-      <section className="bg-gray-900">
+    
+        {/* <a
+          href="#"
+          className="text-[#DCA465] font-medium text-sm hover:underline flex items-center"
+        >
+          Learn More
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="ml-2 h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            />
+          </svg>
+        </a> */}
+      </div>
+    ))}
+  </div>
+</section>
+
+      <section className="bg-gray-900" id="work">
         <div className="max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-12  ">
           <h1 className="text-[48px] text-center text-[#DCA465] font-bold">
             Work Experience
@@ -418,7 +201,10 @@ export default function Home() {
           <AcademicProfessionalJourney />
         </div>
       </section>
-      <section className="text-[48px] text-center text-[#DCA465] font-bold">
+      <section
+        className="text-[48px] text-center text-[#DCA465] font-bold"
+        id="projects"
+      >
         <h1>Projects</h1>
         <div className="flex flex-col items-center justify-center mx-auto container py-10">
           <div className="flex flex-col md:flex-row gap-6">
@@ -433,26 +219,23 @@ export default function Home() {
             <Achievements
               image="/assets/yiaa.jpg"
               title="YIAA Awards"
-              description="We were honored with the 2023 Innovation Award for our outstanding contributions to digital transformation."
+              description="Usalama Technology project written in Nextjs frontend and django framework backend."
               link="https://www.yiaaawards.com/"
               linkLabel="Discover more"
             />
 
             <Achievements
-              image="/assets/citam.jpg"
-              title="Citam Dashboard"
-              description="We were honored with the 2023 Innovation Award for our outstanding contributions to digital transformation."
-              link="#"
+              image="/assets/kodi demo.jpg"
+              title="Kodi Nyumba"
+              description="A rental management system Contribute in the demo scheduling session."
+              link="https://www.kodinyumba.com/"
               linkLabel="Discover more"
             />
           </div>
         </div>
       </section>
-      <section className="text-[48px] text-center text-[#DCA465] font-bold">
-        <h1>Gallery</h1>
-      </section>
-      <section>
-        <Footer/>
+      <section className="bg-gray-900">
+        <Footer />
       </section>
     </DefaultLayout>
   );
