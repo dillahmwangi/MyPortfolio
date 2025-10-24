@@ -28,7 +28,7 @@ export default function Home() {
             </p>
             <div className="flex items-center space-x-4">
               <a
-                href="/assets/Mwangi_Muthony_Software developer_CV.pdf"
+                href="/assets/Mwangi_Muthony_JuniorDeveloper_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-[#DCA465] border- [#DCA465] px-5 py-3 text-base text-bold hover:text-[#DCA465] font-medium text-center text-white border border-[#DCA465] rounded-lg hover:bg-white focus:ring-4 focus:ring-gray-100 dark:text-white  dark:hover:bg-gray-700 dark:focus:ring-gray-800"
@@ -125,49 +125,46 @@ export default function Home() {
         </div>
       </section>
 
-   <section
-  className="max-w-screen-xl px-4 py-12 mx-auto"
-  id="skills"
->
-  <h1 className="text-4xl text-center text-[#DCA465] font-bold mb-12 tracking-wide relative">
-    Skills
-    <span className="block h-1 w-16 bg-[#DCA465] mx-auto mt-2 rounded"></span>
-  </h1>
+      <section className="max-w-screen-xl px-4 py-12 mx-auto" id="skills">
+        <h1 className="text-4xl text-center text-[#DCA465] font-bold mb-12 tracking-wide relative">
+          Skills
+          <span className="block h-1 w-16 bg-[#DCA465] mx-auto mt-2 rounded"></span>
+        </h1>
 
-  <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-    {[
-      { title: "Javascript" },
-      { title: "Python (Django)" },
-      { title: "NextJs" },
-      { title: "ReactJs" },
-      { title: "Tailwind CSS" },
-      { title: "Flutter with Dart" },
-    ].map((skill, index) => (
-      <div
-        key={index}
-        className="flex flex-col bg-white shadow-md border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300"
-      >
-        <div className="flex items-center mb-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="h-8 w-8 text-[#DCA465]"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582"
-            />
-          </svg>
-          <h5 className="ml-3 text-slate-800 text-xl font-semibold">
-            {skill.title}
-          </h5>
-        </div>
-    
-        {/* <a
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            { title: "Javascript" },
+            { title: "Python (Django)" },
+            { title: "NextJs" },
+            { title: "ReactJs" },
+            { title: "Tailwind CSS" },
+            { title: "Flutter with Dart" },
+          ].map((skill, index) => (
+            <div
+              key={index}
+              className="flex flex-col bg-white shadow-md border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300"
+            >
+              <div className="flex items-center mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="h-8 w-8 text-[#DCA465]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582"
+                  />
+                </svg>
+                <h5 className="ml-3 text-slate-800 text-xl font-semibold">
+                  {skill.title}
+                </h5>
+              </div>
+
+              {/* <a
           href="#"
           className="text-[#DCA465] font-medium text-sm hover:underline flex items-center"
         >
@@ -187,10 +184,10 @@ export default function Home() {
             />
           </svg>
         </a> */}
-      </div>
-    ))}
-  </div>
-</section>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <section className="bg-gray-900" id="work">
         <div className="max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-12  ">
@@ -207,7 +204,7 @@ export default function Home() {
       >
         <h1>Projects</h1>
         <div className="flex flex-col items-center justify-center mx-auto container py-10">
-          <div className="flex flex-col md:flex-row gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Achievements
               image="/assets/borderlink.jpg"
               title="BorderLink Solutions"
@@ -215,7 +212,6 @@ export default function Home() {
               link="https://border-link.vercel.app/"
               linkLabel="Read more"
             />
-
             <Achievements
               image="/assets/yiaa.jpg"
               title="YIAA Awards"
@@ -223,7 +219,6 @@ export default function Home() {
               link="https://www.yiaaawards.com/"
               linkLabel="Discover more"
             />
-
             <Achievements
               image="/assets/kodi demo.jpg"
               title="Kodi Nyumba"
@@ -231,6 +226,21 @@ export default function Home() {
               link="https://www.kodinyumba.com/"
               linkLabel="Discover more"
             />
+            <Achievements
+              image="/assets/mommy-ride.png"
+              title="Mommy Ride"
+              description="Mommy Ride is a women-focused transportation platform that provides safe and reliable rides for mothers and their children."
+              link="https://mommy-ride.com/"
+              linkLabel="Discover more"
+            />
+            <Achievements
+              image="/assets/shamba-records.png"
+              title="Shamba Records Technical  test"
+              description="Mommy Ride is a women-focused transportation platform that provides safe and reliable rides for mothers and their children."
+              link="https://shamba-records-theta.vercel.app/"
+              linkLabel="Discover more"
+            />
+            
           </div>
         </div>
       </section>
