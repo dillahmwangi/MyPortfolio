@@ -204,7 +204,7 @@ export default function Home() {
       >
         <h1>Projects</h1>
         <div className="flex flex-col items-center justify-center mx-auto container py-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Achievements
               image="/assets/borderlink.jpg"
               title="BorderLink Solutions"
@@ -215,7 +215,8 @@ export default function Home() {
             <Achievements
               image="/assets/yiaa.jpg"
               title="YIAA Awards"
-              description="Usalama Technology project written in Nextjs frontend and django framework backend."
+              description="Young Innovators and Achievers Africa (YIAA) under the Tupande program — an initiative empowering youth with digital and entrepreneurial skills to create sustainable community impact.
+             Usalama Technology project written in Nextjs frontend and django framework backend."
               link="https://www.yiaaawards.com/"
               linkLabel="Discover more"
             />
@@ -236,8 +237,17 @@ export default function Home() {
             <Achievements
               image="/assets/shamba-records.png"
               title="Shamba Records Technical  test"
-              description="Mommy Ride is a women-focused transportation platform that provides safe and reliable rides for mothers and their children."
+              description="A technical assesment project ngineered using Nextjs for the frontend and Tailwind CSS for styling to create a responsive and visually appealing user interface and python (django framework) for the backend."
               link="https://shamba-records-theta.vercel.app/"
+              linkLabel="Discover more"
+            />
+
+             <Achievements
+              image="/assets/virleo.png"
+              title="Virleo "
+              description="Work in progress portfolio for Virleo Digital Marketing Company.
+            Engineered using Nextjs for the frontend and Tailwind CSS for styling to create a responsive and visually appealing user interface."
+              link="https://virleo.vercel.app/"
               linkLabel="Discover more"
             />
             

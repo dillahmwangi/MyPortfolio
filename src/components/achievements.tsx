@@ -8,10 +8,11 @@ interface AchievementsProps {
   linkLabel: string;
 }
 
-const Achievements: React.FC<AchievementsProps> = ({ image, title, description, link, linkLabel }) => {
+const Achievements: React.FC<AchievementsProps> = ({ image, title, description, link, linkLabel, }) => {
     return (
         <div className="max-w-sm bg-white border shadow-sm" style={{ borderWidth: '1px' }}>
           <a href={link}>
+          
             <img className="w-full border border-[#DCA465]" src={image} alt={title} />
           </a>
           <div className="p-5">
@@ -21,6 +22,7 @@ const Achievements: React.FC<AchievementsProps> = ({ image, title, description, 
             <p className="mb-3 text-left text-[12px] text-gray-700">{description}</p>
             <a
               href={link}
+              target="_blank"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-[#DCA465] rounded-lg"
             >
               {linkLabel}
